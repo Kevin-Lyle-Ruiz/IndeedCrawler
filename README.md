@@ -23,7 +23,3 @@ is then given the option to send the results to an email of the user's choice.
 
 **Important Note**: To send an email using the program, you must have an email that has **Access for less secure apps** enabled in the setting.
                     It is recommended to create a new email for this functionality as enabling this setting makes your email less secure.
-                    
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
