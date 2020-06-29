@@ -23,3 +23,9 @@ is then given the option to send the results to an email of the user's choice.
 
 **Important Note**: To send an email using the program, you must have an email that has **Access for less secure apps** enabled in the setting.
                     It is recommended to create a new email for this functionality as enabling this setting makes your email less secure.
+
+## Future Implementations
+
+- Make the search query less strict, meaning that when the user is prompted to enter in the job they're looking for, the search query will look for those words as well as related words in the job title.
+
+- Have the program store the seach results into a database and use the database data to create the CSV file as well as store the credentials to my sender email that I use for the program so the user is not required to provide their own email to use the email functionality.
