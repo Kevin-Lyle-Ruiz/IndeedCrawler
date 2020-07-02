@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from classes import PageElements
-from functions import parsePage, sendEmail
-import requests, csv
+from functions import parsePage, dataToCSV, sendEmail, truncateData
+import requests
 
 print('What job are you looking for?')
 jobRequest = input()
@@ -17,22 +17,26 @@ location = locationRequest.replace(" ", "+")
 
 URL = 'https://www.indeed.com/jobs?q=' + job + '&l=' + location
 
-#Creating BeautifulSoup object
+# Creating BeautifulSoup object
 page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
 
-#Looking for all the cards container job information
+# Looking for all the cards container job information
 job_elems = soup.find_all('div', class_='jobsearch-SerpJobCard')
 
-#Creating CSV page with headings to put data under
-with open('IndeedResults.csv', 'w') as file:
-    writer = csv.writer(file)
-    writer.writerow(['Title', 'Company', 'Location', 'Link'])
-
-#Creating an object the contains the required elements to perform page crawling
+# Creating an object the contains the required elements to perform page crawling
 indeedPageElements = PageElements(URL, job_elems, jobKeywords)
 
 print('\nCrawling...')
+
+# Parsing page and putting into database
 parsePage(indeedPageElements,)
 
+# CSV option
+dataToCSV()
+
+# Print option
 sendEmail()
+
+# Deleting data from table
+truncateData()
