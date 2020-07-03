@@ -20,7 +20,3 @@ is then given the option to send the results to an email of the user's choice.
 1. Download respository to your preferred location
 2. Open a terminal and go into the repository directory
 3. Run command ```python3 crawler.py```
-
-## Future Implementations
-
-- Make the search query less strict, meaning that when the user is prompted to enter in the job they're looking for, the search query will look for those words as well as related words in the job title.
