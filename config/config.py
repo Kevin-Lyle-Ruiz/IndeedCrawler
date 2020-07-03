@@ -1,6 +1,6 @@
 from configparser import ConfigParser
 
-def config(filename='database.ini', section='data'):
+def config(filename='config/database.ini', section='data'):
     #Create parser
     parser = ConfigParser()
     #Read config file

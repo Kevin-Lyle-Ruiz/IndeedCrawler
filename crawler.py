@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
-from classes import PageElements
-from functions import parsePage, dataToCSV, sendEmail, truncateData
+from assets.classes import PageElements
+from assets.functions import parsePage, dataToCSV, sendEmail, truncateData
 import requests
 
 print('What job are you looking for?')

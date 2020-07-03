@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
-from classes import PageElements
-from config import config
+from assets.classes import PageElements
+from config.config import config
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-import requests, csv, smtplib, ssl, getpass, io, psycopg2
+import requests, csv, smtplib, ssl, getpass, io, psycopg2, sys
 import pandas as pd
 
 # Parses page and adds contents to CSV file
