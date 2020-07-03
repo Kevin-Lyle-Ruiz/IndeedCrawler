@@ -23,4 +23,4 @@ is then given the option to send the results to an email of the user's choice.
 
 ## Future Implementations
 
-- Make the search query less strict, meaning that when the user is prompted to enter in the job they're looking for, the search query will look for those words as well as related words in the job title.   
+- Make the search query less strict, meaning that when the user is prompted to enter in the job they're looking for, the search query will look for those words as well as related words in the job title.
