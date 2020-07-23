@@ -1,6 +1,6 @@
 # Indeed Job Crawler
 
-This program searches through [Indeed.com](https://indeed.com) for job listings. The jobs to look for as well the 
+This script searches through [Indeed.com](https://indeed.com) for job listings. The jobs to look for as well the 
 location is up to the user. The search results are put into a database, which the CSV receives data from and then the user 
 is then given the option to send the results to an email of the user's choice.
 
